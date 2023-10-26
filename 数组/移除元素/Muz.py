@@ -42,35 +42,79 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        slow = 0
         for i in range(0, len(nums)):
-            print(f"第{i+1}轮：{nums}")
-            if slow == len(nums) - 1:
-                break
+            fast = i
             if nums[i] == 0:
-                slow = i+1
-                for j in range(slow, len(nums)):
-                    if nums[j] != 0:
+                while True:
+                    fast += 1
+                    if fast == len(nums):
                         break
-                    else:
-                        slow = j
-                nums[i], nums[slow] = nums[slow], nums[i]
-        print(f"nums的值为{nums}")
+                    if nums[fast] != 0:
+                        break
+                if fast == len(nums):
+                    break
+                else:    
+                    nums[i], nums[fast] = nums[fast], nums[i]
+     
     
 
     """
     844. 比较含退格的字符串
     """
 
+    """
+    input: s = 'ab#c', t = 'ad#c'
+    output: true
+    explanation: both s and t become "ac".
+
+    使用双指针模拟两个字符串退格
+    """
     def backspaceCompare(self, s: str, t: str) -> bool:
-        pass
+        def compare(s_obj: str) -> str:
+            slow = 0
+            s_obj = list(s_obj)
+            for i in range(len(s_obj)):
+                if s_obj[i] != '#':
+                    s_obj[slow] = s_obj[i]
+                    slow += 1
+                else:
+                    if slow > 0:
+                        slow -= 1
+            return s_obj[:slow]
+        print(compare(s))
+        print(compare(t))
+        return compare(s) == compare(t)
+
+
+
 
 
     """
     977. 有序数组的平方
     """
     def sortedSquares(self, nums: List[int]) -> List[int]:
-        pass
+        """
+        解法1：直接用内置函数怼
+        """
+        # return sorted([i**2 for i in nums])
+        """
+        解法2：双指针法，力扣上的解法是空间换时间，建一个新数组作快排
+        """
+        res = [-1] * len(nums)
+        pos = len(nums) - 1
+        for i in range(0, len(nums)):
+            nums[i] = nums[i] ** 2
+        left = 0
+        right = len(nums) - 1
+        while left <= right:
+            if nums[left] < nums[right]:
+                res[pos] = nums[right]
+                right -= 1
+            elif nums[left] >= nums[right]:
+                res[pos] = nums[left]
+                left += 1
+            pos -= 1
+        return res
 
 
 
@@ -78,5 +122,6 @@ class Solution:
 
 if __name__ == "__main__": 
    s = Solution()
-   s.moveZeroes([0,1,0,3,12])
+   print(s.backspaceCompare("a#c", "b"))
+#    print(s.sortedSquares([-4, -1, 0, 2, 3]))
     

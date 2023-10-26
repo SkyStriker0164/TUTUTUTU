@@ -12,6 +12,7 @@
 * [367.有效的完全平方数](https://leetcode.cn/problems/valid-perfect-square/)
 * [27.移除元素](https://leetcode.cn/problems/remove-element/)
 * [26.删除排序数组中的重复项](https://leetcode.cn/problems/remove-duplicates-from-sorted-array/description/)
+* [283.移动零](https://leetcode.cn/problems/move-zeroes/description/)
 * [844.比较含退格的字符串](https://leetcode.cn/problems/backspace-string-compare/description/)
 * [977.有序数组的平方](https://leetcode.cn/problems/squares-of-a-sorted-array/description/)
 * [209.长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/description/)
