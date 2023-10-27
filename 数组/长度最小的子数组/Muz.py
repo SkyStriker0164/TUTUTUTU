@@ -59,16 +59,16 @@ class Solution:
         res = ''
         for j in range(len(s)):
             if s[j] in need:
-                needCnt -= 1
+                if need[s[j]] > 0:
+                    needCnt -= 1
                 need[s[j]] -= 1
-            print(f"need:{need}, needCnt:{needCnt}")
             while(needCnt == 0):
                 if not res or j - i + 1 < len(res):
-                    res = s[i : j + 1]
-                need[s[i]] += 1
-                print("need[s[i]]的值：", need[s[i]])
+                    res = s[i : j + 1]    
                 if s[i] in need:
-                    needCnt += 1
+                    if need[s[i]] == 0:
+                        needCnt += 1
+                    need[s[i]] += 1
                 i += 1
         return res
 
