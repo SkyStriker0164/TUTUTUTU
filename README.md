@@ -31,5 +31,10 @@
 
 
 * [203.移除链表元素](https://leetcode.cn/problems/remove-linked-list-elements/)
-
+* [707.设计链表](https://leetcode.cn/problems/design-linked-list/description/)
+* [206.翻转链表](https://leetcode.cn/problems/reverse-linked-list/description/)
+* [24.两两交换链表中的节点](https://leetcode.cn/problems/swap-nodes-in-pairs/description/)
+* [19.删除链表的倒数第N个节点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/description/)
+* [160.链表相交](https://leetcode.cn/problems/intersection-of-two-linked-lists-lcci/description/)
+* [142.环形链表](https://leetcode.cn/problems/linked-list-cycle-ii/description/)
 

@@ -18,7 +18,7 @@ class Solution:
         fake_head.next = head
         pnt = fake_head
         while pnt.next:
-            if pnt.val == val:
+            if pnt.next.val == val:
                 pnt.next = pnt.next.next
             else:   
                 pnt = pnt.next
