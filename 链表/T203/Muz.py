@@ -14,6 +14,9 @@ class ListNode:
 
 class Solution:
     def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
+        """
+        创建虚拟头节点让链表统一删除规则
+        """
         fake_head = ListNode()
         fake_head.next = head
         pnt = fake_head
