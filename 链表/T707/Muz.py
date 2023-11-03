@@ -143,7 +143,7 @@ class MyLinkedList:
             if index < self.size // 2:
                 cur = self.head
                 for i in range(index - 1):
-                    cur = cur.next
+                    cur = cur.next 
             else:
                 cur = self.tail
                 for i in range(self.size - index):
