@@ -38,3 +38,23 @@
 * [160.链表相交](https://leetcode.cn/problems/intersection-of-two-linked-lists-lcci/description/)
 * [142.环形链表](https://leetcode.cn/problems/linked-list-cycle-ii/description/)
 
+---
+
+
+#### 哈希表
+
+- [ ] 完成情况
+
+
+
+* [242.有效的字母异位词](https://leetcode.cn/problems/valid-anagram/description/)
+* [383.赎金信](https://leetcode.cn/problems/ransom-note/description/)
+* [49.字母异位词分组](https://leetcode.cn/problems/group-anagrams/)
+* [438.找到字符串中所有字母异位词](https://leetcode.cn/problems/find-all-anagrams-in-a-string/)
+* [349.两个数组的交集](https://leetcode.cn/problems/intersection-of-two-arrays/description/)
+* [350.两个数组的交集Ⅱ](https://leetcode.cn/problems/intersection-of-two-arrays-ii/)
+* [202.快乐数](https://leetcode.cn/problems/happy-number/description/)
+* [1.两数之和](https://leetcode.cn/problems/two-sum/)
+* [454.四数之和Ⅱ](https://leetcode.cn/problems/4sum-ii/description/)
+* [15.三数之和](https://leetcode.cn/problems/3sum/)
+* [18.四数之和](https://leetcode.cn/problems/4sum/description/)
